@@ -9,12 +9,11 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+			<div id="content" role="main" class="unit">
 
-				<h1 class="page-title"><?php
+				<h2 class="page-title"><?php
 					printf( __( 'Tag Archives: %s', 'twentyten' ), '<span>' . single_tag_title( '', false ) . '</span>' );
-				?></h1>
+				?></h2>
 
 <?php
 /* Run the loop for the tag archive to output the posts
@@ -24,7 +23,6 @@ get_header(); ?>
  get_template_part( 'loop', 'tag' );
 ?>
 			</div><!-- #content -->
-		</div><!-- #container -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

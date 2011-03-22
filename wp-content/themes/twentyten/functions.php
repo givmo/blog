@@ -378,63 +378,8 @@ function twentyten_widgets_init() {
 		'description' => __( 'The primary widget area', 'twentyten' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Secondary Widget Area', 'twentyten' ),
-		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'twentyten' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 3, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'First Footer Widget Area', 'twentyten' ),
-		'id' => 'first-footer-widget-area',
-		'description' => __( 'The first footer widget area', 'twentyten' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 4, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Second Footer Widget Area', 'twentyten' ),
-		'id' => 'second-footer-widget-area',
-		'description' => __( 'The second footer widget area', 'twentyten' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 5, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Third Footer Widget Area', 'twentyten' ),
-		'id' => 'third-footer-widget-area',
-		'description' => __( 'The third footer widget area', 'twentyten' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 6, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Fourth Footer Widget Area', 'twentyten' ),
-		'id' => 'fourth-footer-widget-area',
-		'description' => __( 'The fourth footer widget area', 'twentyten' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h5 class="widget-title">',
+		'after_title' => '</h5>',
 	) );
 }
 /** Register sidebars by running twentyten_widgets_init() on the widgets_init hook. */
@@ -464,19 +409,7 @@ if ( ! function_exists( 'twentyten_posted_on' ) ) :
  * @since Twenty Ten 1.0
  */
 function twentyten_posted_on() {
-	printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'twentyten' ),
-		'meta-prep meta-prep-author',
-		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
-			get_permalink(),
-			esc_attr( get_the_time() ),
-			get_the_date()
-		),
-		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
-			get_author_posts_url( get_the_author_meta( 'ID' ) ),
-			sprintf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ),
-			get_the_author()
-		)
-	);
+	print(get_the_date() . ' - ' . get_the_author());
 }
 endif;
 

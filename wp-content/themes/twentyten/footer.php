@@ -12,32 +12,48 @@
 ?>
 	</div><!-- #main -->
 
-	<div id="footer" role="contentinfo">
-		<div id="colophon">
+  <footer class="ctnr clearfix">
+    <h5><a href="https://www.givmo.com/pages/how_it_works">How does it work?</a></h5>
+      <div class="panels">
+        <a href="https://www.givmo.com/pages/how_it_works#hiw_1" class="unit thumb">
+          <img alt="Hiw_small_1" src="http://www.givmo.com/images/hiw_small_1.jpg?1300813162" />
+          <span>People upload pictures of items they no longer want</span>
 
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
+  </a>    </div>
+      <div class="panels">
+        <a href="https://www.givmo.com/pages/how_it_works#hiw_2" class="unit thumb">
+          <img alt="Hiw_small_2" src="http://www.givmo.com/images/hiw_small_2.jpg?1300813162" />
+          <span>Users browse the listings to find items they want</span>
+  </a>    </div>
+      <div class="panels">
+        <a href="https://www.givmo.com/pages/how_it_works#hiw_3" class="unit thumb">
 
-			<div id="site-info">
-				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-			</div><!-- #site-info -->
+          <img alt="Hiw_small_3" src="http://www.givmo.com/images/hiw_small_3.jpg?1300813162" />
+          <span>Karma determines who wins each item</span>
+  </a>    </div>
+      <div class="panels">
+        <a href="https://www.givmo.com/pages/how_it_works#hiw_4" class="unit thumb">
+          <img alt="Hiw_small_4" src="http://www.givmo.com/images/hiw_small_4.jpg" />
+          <span>The Giver of the item ships it to the Winner</span>
+  </a>    </div>
 
-			<div id="site-generator">
-				<?php do_action( 'twentyten_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyten' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyten' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s.', 'twentyten' ), 'WordPress' ); ?></a>
-			</div><!-- #site-generator -->
+      <div class="panels">
+        <a href="https://www.givmo.com/pages/how_it_works#hiw_5" class="unit thumb">
+          <img alt="Hiw_small_5" src="http://www.givmo.com/images/hiw_small_5.jpg" />
+          <span>The Winner of the item pays only the discounted shipping cost</span>
+  </a>    </div>
 
-		</div><!-- #colophon -->
-	</div><!-- #footer -->
+    <nav class="unit">
+      <ul>
+        <li><a href="https://www.givmo.com/">Home</a></li>
 
-</div><!-- #wrapper -->
-
+        <li><a href="https://www.givmo.com/pages/faq">FAQ</a></li>
+        <li><a href="https://www.givmo.com/pages/about">About</a></li>
+        <li><a href="https://www.givmo.com/pages/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+  
 <?php
 	/* Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which

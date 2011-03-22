@@ -25,9 +25,9 @@
 				<?php endif; ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h2 class="entry-title"><?php the_title(); ?></h2>
+					<h3 class="entry-title"><?php the_title(); ?></h3>
 
-					<div class="entry-meta">
+					<div class="parenthetical entry-meta">
 						<?php
 							printf( __( '<span class="%1$s">By</span> %2$s', 'twentyten' ),
 								'meta-prep meta-prep-author',

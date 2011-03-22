@@ -8,7 +8,7 @@
  */
 ?>
 
-		<div id="primary" class="widget-area" role="complementary">
+		<div id="primary" class="unit widget-area" role="complementary">
 			<ul class="xoxo">
 
 <?php

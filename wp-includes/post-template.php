@@ -323,7 +323,7 @@ function get_post_class( $class = '', $post_id = null ) {
 	if ( empty($post) )
 		return $classes;
 
-	$classes[] = 'post-' . $post->ID;
+	$classes[] = 'ctnr post-' . $post->ID;
 	$classes[] = $post->post_type;
 	$classes[] = 'type-' . $post->post_type;
 	$classes[] = 'status-' . $post->post_status;

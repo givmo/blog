@@ -14,8 +14,7 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+			<div id="content" role="main" class="onecol">
 
 			<?php
 			/* Run the loop to output the page.
@@ -26,7 +25,6 @@ get_header(); ?>
 			?>
 
 			</div><!-- #content -->
-		</div><!-- #container -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

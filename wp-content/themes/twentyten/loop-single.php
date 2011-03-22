@@ -23,9 +23,9 @@
 				</div><!-- #nav-above -->
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h3 class="entry-title"><?php the_title(); ?></h3>
 
-					<div class="entry-meta">
+					<div class="parenthetical entry-meta">
 						<?php twentyten_posted_on(); ?>
 					</div><!-- .entry-meta -->
 
