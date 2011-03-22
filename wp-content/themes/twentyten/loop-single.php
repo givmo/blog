@@ -50,9 +50,8 @@
     					<span class="cat-links">
     						<?php printf( __( '%2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
     					</span>
-    					<span class="meta-sep">|</span>
     				<?php endif; ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
 
