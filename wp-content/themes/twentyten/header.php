@@ -56,7 +56,7 @@
 <body <?php body_class(); ?>>
   <header>
     <div class="inner clearfix">
-      <a href="/" id="logo">Givmo Home</a>
+      <a href="https://www.givmo.com" id="logo">Givmo Home</a>
       <nav id="item_nav_2" class="item_nav clearfix">
         <div class="unit">
           <a href="https://www.givmo.com">Back to Givmo &rarr;</a>    
