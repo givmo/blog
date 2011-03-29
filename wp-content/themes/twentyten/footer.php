@@ -13,40 +13,44 @@
 	</div><!-- #main -->
 
   <footer class="ctnr clearfix">
-    <h5><a href="https://www.givmo.com/pages/how_it_works">How does it work?</a></h5>
+    <h2>How does it work?
+        <a href="https://www.givmo.com/pages/how_it_works">learn more &rarr;</a>
+    </h2>
+
       <div class="panels">
         <a href="https://www.givmo.com/pages/how_it_works#hiw_1" class="unit thumb">
-          <img alt="Hiw_small_1" src="http://www.givmo.com/images/hiw_small_1.jpg?1300813162" />
-          <span>People upload pictures of items they no longer want</span>
+          <img alt="" src="https://www.givmo.com/images/hiw_small_1.jpg" />
+          <span>Givers post stuff they want to give away, for free</span>
 
   </a>    </div>
       <div class="panels">
         <a href="https://www.givmo.com/pages/how_it_works#hiw_2" class="unit thumb">
-          <img alt="Hiw_small_2" src="http://www.givmo.com/images/hiw_small_2.jpg?1300813162" />
-          <span>Users browse the listings to find items they want</span>
+          <img alt="" src="https://www.givmo.com/images/hiw_small_2.jpg" />
+          <span>Users can request any item they want, also for free</span>
   </a>    </div>
       <div class="panels">
         <a href="https://www.givmo.com/pages/how_it_works#hiw_3" class="unit thumb">
 
-          <img alt="Hiw_small_3" src="http://www.givmo.com/images/hiw_small_3.jpg?1300813162" />
-          <span>Karma determines who wins each item</span>
+          <img alt="" src="https://www.givmo.com/images/hiw_small_3.jpg" />
+          <span>Karma and chance determine the Winner</span>
   </a>    </div>
       <div class="panels">
         <a href="https://www.givmo.com/pages/how_it_works#hiw_4" class="unit thumb">
-          <img alt="Hiw_small_4" src="http://www.givmo.com/images/hiw_small_4.jpg" />
+          <img alt="" src="https://www.givmo.com/images/hiw_small_4.jpg" />
           <span>The Giver of the item ships it to the Winner</span>
   </a>    </div>
 
       <div class="panels">
         <a href="https://www.givmo.com/pages/how_it_works#hiw_5" class="unit thumb">
-          <img alt="Hiw_small_5" src="http://www.givmo.com/images/hiw_small_5.jpg" />
-          <span>The Winner of the item pays only the discounted shipping cost</span>
+          <img alt="" src="https://www.givmo.com/images/hiw_small_5.jpg" />
+          <span>The Winner pays only the discounted shipping cost</span>
   </a>    </div>
 
     <nav class="unit">
       <ul>
-        <li><a href="https://www.givmo.com/">Home</a></li>
+        <li><a href="/">Home</a></li>
 
+        <li><a href="https://www.givmo.com/pages/how_it_works">How it works</a></li>
         <li><a href="https://www.givmo.com/pages/faq">FAQ</a></li>
         <li><a href="https://www.givmo.com/pages/about">About</a></li>
         <li><a href="https://www.givmo.com/pages/contact">Contact</a></li>
