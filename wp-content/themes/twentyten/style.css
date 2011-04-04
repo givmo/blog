@@ -21,7 +21,7 @@
   margin:1em 6px;
 }
 
-.post, .comment {
+.post, .comment, .pingback {
   padding:20px;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -83,6 +83,7 @@ h3#comments-title {
 	border-bottom: none;
 	margin-bottom: 0;
 }
+
 #comments .comment-body ul,
 #comments .comment-body ol {
 	margin-bottom: 18px;
