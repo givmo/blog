@@ -48,10 +48,9 @@
 
     <nav class="unit">
       <ul>
-        <li><a href="/">Home</a></li>
-
         <li><a href="https://www.givmo.com/pages/how_it_works">How it works</a></li>
         <li><a href="https://www.givmo.com/pages/faq">FAQ</a></li>
+        <li><a href="http://blog.givmo.com">Blog</a></li>
         <li><a href="https://www.givmo.com/pages/about">About</a></li>
         <li><a href="https://www.givmo.com/pages/contact">Contact</a></li>
       </ul>
