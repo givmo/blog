@@ -51,6 +51,10 @@
 	 */
 	wp_head();
 ?>
+<!--[if lt IE 9]>
+  <link href="https://www.givmo.com/stylesheets/ie/application.css?1302367281" media="screen" rel="stylesheet" type="text/css" />
+  <script src="https://www.givmo.com/javascripts/ie/html5.js?1302367281" type="text/javascript"></script>
+<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
