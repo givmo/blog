@@ -37,6 +37,11 @@
 <link rel="stylesheet" type="text/css" media="all" href="http://www.givmo.com/assets/app.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+   // Load the Visualization API and the piechart package.
+   google.load('visualization', '1', {'packages':['corechart', 'geomap']});
+</script>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
