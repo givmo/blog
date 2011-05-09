@@ -1,11 +1,6 @@
 blockquote {
-	font-style: italic;
-	padding: 0 3em;
-}
-blockquote cite,
-blockquote em,
-blockquote i {
-	font-style: normal;
+	padding: 0 40px 0 60px;
+	background:url("images/blockquotes.gif") no-repeat;
 }
 
 #content {
