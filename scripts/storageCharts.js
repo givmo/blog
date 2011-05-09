@@ -51,7 +51,7 @@ function drawStorageCharts() {
   new google.visualization.ColumnChart(document.getElementById('facilities_pp_by_state')).draw(facilities_data, {width: 598, height: 320, legend: 'none', title: 'Number of Self Storage Facilities By State Per 10,000 People', isStacked: true, vAxis: {title: "Facilities Per 10,000 People"}, hAxis: {slantedTextAngle: 70}});
 
   // map      
-  new google.visualization.GeoMap(document.getElementById('facilities_region')).draw(facilities_map_data, {region: 'US'});
+  new google.visualization.GeoMap(document.getElementById('facilities_region')).draw(facilities_map_data, {width:'598px', region: 'US'});
 
   // scatter graph
   new google.visualization.ScatterChart(document.getElementById('facilities_youth')).draw(facilities_youth_data, {width: 598, height: 320, legend: 'none', title: 'Number of Self Storage Facilities Per 10,000 People and Percentage of Population Under 18', vAxis: {title: "Facilities Per 10,000 People"}, hAxis: {title: 'Percentage of Population Under 18'}});
