@@ -48,7 +48,7 @@ function drawStorageCharts() {
     facilities_map_data.setValue(i, 1, facilities_pp);
   }
   
-  new google.visualization.ColumnChart(document.getElementById('facilities_pp_by_state')).draw(facilities_data, {width: 598, height: 320, legend: 'none', title: 'Number of Self Storage Facilities By State Per 10,000 People', isStacked: true, vAxis: {title: "Facilities Per 10,000 People"}, hAxis: {slantedTextAngle: 70}});
+  new google.visualization.ColumnChart(document.getElementById('facilities_pp_by_state')).draw(facilities_data, {width: 598, height: 320, legend: 'none', title: 'Number of Self Storage Facilities By State Per 10,000 People', isStacked: true, vAxis: {title: "Facilities Per 10,000 People"}, hAxis: {slantedTextAngle: 90}});
 
   // map      
   new google.visualization.GeoMap(document.getElementById('facilities_region')).draw(facilities_map_data, {width:'598px', region: 'US'});
