@@ -1,3 +1,13 @@
+blockquote {
+	font-style: italic;
+	padding: 0 3em;
+}
+blockquote cite,
+blockquote em,
+blockquote i {
+	font-style: normal;
+}
+
 #content {
   width: 640px;
   margin-right: 9px;
