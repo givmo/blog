@@ -52,6 +52,7 @@
 
 h1 {font-family: 'CantarellRegular'; font-weight:normal;}
 h2 {font-family: 'CantarellRegular';}
+h5 {margin:1em 0;}
 
 blockquote {
 	padding: 0 40px 0 60px;
@@ -114,6 +115,13 @@ blockquote {
 .widget_recent_entries li{
   margin:0.5em 0;
 }
+
+.follow-us .follow {
+  display:block; float:left; margin-left:10px; background:url("http://www.givmo.com/images/icons_32.png") no-repeat; height:32px; width:32px; text-indent:-10000px; overflow:hidden;
+}
+
+.follow-us .twitter { background-position:0 -64px; }
+
 
 /* =Images
 -------------------------------------------------------------- */

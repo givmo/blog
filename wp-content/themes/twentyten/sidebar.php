@@ -10,6 +10,13 @@
 
 		<div id="primary" class="unit widget-area" role="complementary">
 			<ul class="xoxo">
+			  <li class="widget-container follow-us clearfix">
+			    <h5 class="widget-title">Follow Us</h5>
+			    <a href="<?php bloginfo('rss2_url')?>" class="unit"><img src="<?php bloginfo('template_url') ?>/images/rss_32.gif" /></a>
+			    <a href="https://twitter.com/#!/givmo" class="follow twitter">Twitter</a>
+			    <a href="https://www.facebook.com/pages/Givmo/168806286481136" class="follow facebook">Facebook</a>
+			  </li>
+
 
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
