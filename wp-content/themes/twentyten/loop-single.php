@@ -16,7 +16,7 @@
 ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div id="post-<?php the_ID(); ?>" <?php post_class('ctnr'); ?>>
 					<h3 class="entry-title"><?php the_title(); ?></h3>
 
 					<div class="parenthetical entry-meta">

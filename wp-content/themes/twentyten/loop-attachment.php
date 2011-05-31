@@ -24,7 +24,7 @@
 					?></a></p>
 				<?php endif; ?>
 
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div id="post-<?php the_ID(); ?>" <?php post_class('ctnr'); ?>>
 					<h3 class="entry-title"><?php the_title(); ?></h3>
 
 					<div class="parenthetical entry-meta">

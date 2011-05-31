@@ -323,7 +323,7 @@ function twentyten_comment( $comment, $args, $depth ) {
 	switch ( $comment->comment_type ) :
 		case '' :
 	?>
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+	<li <?php comment_class('ctnr'); ?> id="li-comment-<?php comment_ID(); ?>">
 		<div id="comment-<?php comment_ID(); ?>">
 		<div class="comment-author vcard">
 			<?php echo get_avatar( $comment, 40 ); ?>

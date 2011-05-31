@@ -43,7 +43,7 @@
 			</div> <!-- .navigation -->
 <?php endif; // check for comment navigation ?>
 
-			<div class="commentlist">
+			<ol class="commentlist">
 				<?php
 					/* Loop through and list the comments. Tell wp_list_comments()
 					 * to use twentyten_comment() to format the comments.
@@ -51,9 +51,9 @@
 					 * define twentyten_comment() and that will be used instead.
 					 * See twentyten_comment() in twentyten/functions.php for more.
 					 */
-					wp_list_comments( array( 'style' => 'div' ) );
+					wp_list_comments( array( 'callback' => 'twentyten_comment' ) );
 				?>
-			</div>
+			</ol>
 
 <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 			<div class="navigation">

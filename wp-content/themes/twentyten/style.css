@@ -171,17 +171,6 @@ h3#comments-title {
 	list-style: none;
 	margin: 0;
 }
-.commentlist li.comment {
-	border-bottom: 1px solid #e7e7e7;
-	line-height: 24px;
-	margin: 0 0 24px 0;
-	padding: 0 0 0 56px;
-	position: relative;
-}
-.commentlist li:last-child {
-	border-bottom: none;
-	margin-bottom: 0;
-}
 
 #comments .comment-body ul,
 #comments .comment-body ol {
@@ -219,10 +208,6 @@ h3#comments-title {
 
 .commentlist .children {
 	list-style: none;
-	margin: 0;
-}
-.commentlist .children li {
-	border: none;
 	margin: 0;
 }
 
