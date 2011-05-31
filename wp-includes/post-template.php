@@ -323,7 +323,7 @@ function get_post_class( $class = '', $post_id = null ) {
 	if ( empty($post) )
 		return $classes;
 
-	$classes[] = 'ctnr post-' . $post->ID;
+	$classes[] = 'post-' . $post->ID;
 	$classes[] = $post->post_type;
 	$classes[] = 'type-' . $post->post_type;
 	$classes[] = 'status-' . $post->post_status;
@@ -1100,9 +1100,8 @@ class Walker_PageDropdown extends Walker {
 		if ( $page->ID == $args['selected'] )
 			$output .= ' selected="selected"';
 		$output .= '>';
-		$title = esc_html($page->post_title);
 		$title = apply_filters( 'list_pages', $page->post_title );
-		$output .= "$pad$title";
+		$output .= $pad . esc_html( $title );
 		$output .= "</option>\n";
 	}
 }
