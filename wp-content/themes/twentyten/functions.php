@@ -353,7 +353,7 @@ function twentyten_comment( $comment, $args, $depth ) {
 		case 'pingback'  :
 		case 'trackback' :
 	?>
-	<li class="post pingback">
+	<li class="post pingback ctnr">
 		<p><?php _e( 'Pingback:', 'twentyten' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'twentyten' ), ' ' ); ?></p>
 	<?php
 			break;
