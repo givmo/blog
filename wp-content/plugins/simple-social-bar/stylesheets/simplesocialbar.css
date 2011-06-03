@@ -1,0 +1,33 @@
+.simplesocialbar-horizontal {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+.simplesocialbar-horizontal .simplesocialbar-button {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin-right: 5px;
+}
+
+.simplesocialbar-vertical {
+    position: fixed;
+    z-index: 100;
+    top: 40px;
+    display: block;
+    float: left;
+    width: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+.simplesocialbar-vertical .simplesocialbar-button { margin: 5px 0 0; }
+.simplesocialbar-vertical .simplesocialbar-button:first-child { margin: 0; }

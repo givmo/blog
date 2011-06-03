@@ -1,0 +1,64 @@
+#simplesocialbar-form { width: 700px; }
+#button-list {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+}
+#button-list li {
+    position: relative;
+    margin: 0;
+    padding: 10px 0 10px;
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px dotted #ccc;
+}
+#button-list li:hover { background: #ffffe0 }
+#button-list li:first-child {
+    border-top: none;
+}
+#button-list li .handle {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    cursor: move;
+    background: url('../images/handle.png');
+}
+#button-list li .button-type,
+#button-list li .button-verticaldisplay,
+#button-list li .button-horizontaldisplay {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    margin-right: 10px;
+}
+#button-list li .button-horizontaldisplay, #button-list li .button-verticaldisplay { width: 120px; }
+#button-list li .button-codesnippet {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+#button-list li .button-codesnippet textarea {
+    width: 99%;
+    margin: 5px 0 10px;
+}
+#button-list li .button-codesnippet p { margin: 0; }
+#button-list li .button-codesnippetbig,
+#button-list li .button-codesnippetsmall {
+    width: 49%;
+    float: left;
+    margin: 0;
+}
+#button-list li .button-codesnippetsmall { float: right; }
+
+#simplesocialbar-data label {
+    display: block;
+    margin: 0 0 5px;
+}
