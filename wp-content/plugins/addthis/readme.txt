@@ -1,9 +1,9 @@
-=== AddThis featuring Sharing Buttons / Facebook Like / Tweet Button === 
+=== AddThis featuring Sharing Buttons / Facebook Like / Tweet Button / Google + 1 === 
 Contributors: _mjk_, jorbin
-Tags: share, addthis, social, bookmark, sharing, bookmarking, widget,AddThis, addtoany, aim, bookmark, buzz, del.icio.us, Digg,e-mail, email, Facebook, google bookmarks, google buzz, myspace,network, NewsVine, Reddit, Share, share this, sharethis, social, socialize, stumbleupon, twitter, windows live, yahoo buzz
+Tags: share, addthis, social, bookmark, sharing, bookmarking, widget,AddThis, addtoany, aim, bookmark, buzz, del.icio.us, Digg,e-mail, email, Facebook, google bookmarks, google buzz, myspace,network, NewsVine, Reddit, Share, share this, sharethis, social, socialize, stumbleupon, twitter, windows live, yahoo buzz, plus one, google plus one, plus 1, + one, + 1
 Requires at least: 2.9
-Tested up to: 3.1.1
-Stable tag: 2.1.0
+Tested up to: 3.1.3
+Stable tag: 2.1.1
 
 The AddThis Social Bookmarking Widget allows any visitor to bookmark and share your site easily with many popular services. 
 
@@ -30,8 +30,6 @@ For a manual installation via FTP:
 To upload the plugin through WordPress, instead of FTP:
 
 1. Upload the downloaded zip file on the 'Add New' plugins screen (see the 'Upload' tab) in your WordPress admin area and activate.
-
-Note: due to confusion, there are no longer separate versions for PHP4 and PHP5.
 
 == Frequently Asked Questions ==
 
@@ -75,6 +73,9 @@ In the screen options you can enable the AddThis meta box.  Check the box and sa
 PHP 5+ is preferred; PHP 4 is supported.
 
 == Changelog ==
+= 2.1.1 =
+* Add Google +1
+
 = 2.1.0 =
 * Add Twitter Template Option
 * Add Post Meta Box
@@ -157,6 +158,9 @@ Fixed nondeterministic bug with the_title(), causing the title to occasionally a
 
 
 == Upgrade Notice ==
+= 2.1.1 =
+Add +1 to the button options
+
 = 2.1.0 =
 More Features, More Filters, More Social Goodness
 

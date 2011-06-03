@@ -3,7 +3,7 @@ class addthis_post_metabox{
 
     function admin_init()
     {
-        $screens = apply_filters('addhtis_post_metabox_screens', array('post', 'page') );
+        $screens = apply_filters('addthis_post_metabox_screens', array('post', 'page') );
         foreach($screens as $screen)
         {
         add_meta_box('addthis', 'AddThis', array($this, 'post_metabox'), $screen, 'side', 'default'  );

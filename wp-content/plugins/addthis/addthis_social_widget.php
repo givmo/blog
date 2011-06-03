@@ -26,7 +26,7 @@ else return;
 * Plugin Name: AddThis Social Bookmarking Widget
 * Plugin URI: http://www.addthis.com
 * Description: Help your visitor promote your site! The AddThis Social Bookmarking Widget allows any visitor to bookmark your site easily with many popular services. Sign up for an AddThis.com account to see how your visitors are sharing your content--which services they're using for sharing, which content is shared the most, and more. It's all free--even the pretty charts and graphs.
-* Version: 2.1.0
+* Version: 2.1.1
 *
 * Author: The AddThis Team
 * Author URI: http://www.addthis.com/blog
@@ -57,7 +57,7 @@ $addthis_new_styles = array(
 
     'small_toolbox' => array( 'src' =>  '<div class="addthis_toolbox addthis_default_style addthis_" %s ><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a><a class="addthis_button_compact"></a></div>', 'img' => 'toolbox-small.png', 'name' => 'Small Toolbox', 'above' => 'hidden ', 'below' => ''
     ), // 32x32
-
+    'plus_one_share_counter' => array( 'src' => '<div class="addthis_toolbox addthis_default_style" %s ><a class="addthis_button_google_plusone"></a><a class="addthis_counter addthis_pill_style"></a></div>', 'img' => 'plusone-share.gif', 'name' => 'Plus One and Share Counter', 'above'=> 'hidden', 'below'=>'hidden'), // +1
     'small_toolbox_with_share' => array( 'src' =>  '<div class="addthis_toolbox addthis_default_style " %s ><a href="//addthis.com/bookmark.php?v=250&amp;username=xa-4d2b47597ad291fb" class="addthis_button_compact">Share</a><span class="addthis_separator">|</span><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a></div>', 'img' => 'small-toolbox.jpg', 'name' => 'Small Toolbox with Share first', 'above' => '', 'below' => 'hidden' 
     ), // Plus sign share | four buttons
     'large_toolbox' => array( 'src' =>  '<div class="addthis_toolbox addthis_default_style addthis_32x32_style" %s ><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a><a class="addthis_button_compact"></a></div>', 'img' => 'toolbox-large.png', 'name' => 'Large Toolbox', 'above' => 'hidden ', 'below' => ''
@@ -113,7 +113,7 @@ function addthis_script_to_content($content)
 }
 
 define( 'addthis_style_default' , 'small_toolbox_with_share');
-define( 'ADDTHIS_PLUGIN_VERSION', '2.1.0');
+define( 'ADDTHIS_PLUGIN_VERSION', '2.1.1');
 /**
  * Converts our old many options in to one beautiful array
  *
@@ -1225,7 +1225,7 @@ function addthis_output_script($return = false )
     
     $script = "\n<!-- AddThis Button Begin -->\n"
              .'<script type="text/javascript">'
-             ."var addthis_product = 'wpp-257';\n";
+             ."var addthis_product = 'wpp-258';\n";
 
 
     $pub = (isset($options['profile'])) ? $options['profile'] : false ;
@@ -1821,5 +1821,26 @@ register_activation_hook( __FILE__, 'addthis_activation_hook' );
 
 
 require_once('addthis_post_metabox.php');
+
+// remove the generator tag if plus one is being used.  Hopefully only temp.
+add_action('wp_head', 'addthis_rm_genTag', 2);
+
+function addthis_rm_genTag(){
+   
+    if ( isset($_GET['preview']) &&  $_GET['preview'] == 1 && $options = get_transient('addthis_settings') )
+        $preview = true;
+    else
+        $options = get_option('addthis_settings');
+
+    if ($options['above'] =='plus_one_share_counter' || $options['below'] == 'plus_one_share_counter')
+        remove_action('wp_head', 'wp_generator');
+    elseif ($options['above'] == 'custom' && ( strpos( $options['above_custom_services'], 'google_plusone') !== false) ) 
+        remove_action('wp_head', 'wp_generator');
+    elseif ($options['below'] == 'custom' && ( strpos( $options['below_custom_services'], 'google_plusone') !== false) ) 
+        remove_action('wp_head', 'wp_generator');
+   
+
+}
+
 
 ?>
