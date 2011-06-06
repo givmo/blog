@@ -16,6 +16,10 @@
 			    <a href="https://twitter.com/#!/givmo" class="follow twitter">Twitter</a>
 			    <a href="https://www.facebook.com/pages/Givmo/168806286481136" class="follow facebook">Facebook</a>
 			  </li>
+			  <li class="widget-container">
+			    <h5>About</h5>
+			    <p>Givmo is like an online Goodwill or Freecycle on steroids with a charitable twist: give away stuff you don't want and get stuff you do; $1 goes to charity for every item given!</p>
+			  </li>
 
 
 <?php
