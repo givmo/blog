@@ -1,5 +1,4 @@
 <?php if ($related_query->have_posts()):?>
-</div>
 <div class="widget_yarpp_widget">
   <h4>Related Posts</h4>
   <ul>
@@ -7,4 +6,5 @@
       <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a><!-- (<?php the_score(); ?>)--></li>
     <?php endwhile; ?>
   </ul>
+</div>
 <?php endif; ?>

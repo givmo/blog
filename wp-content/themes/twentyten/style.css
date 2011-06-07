@@ -78,11 +78,13 @@ blockquote {
 #nav_prev{float:left;}
 #nav_next{float:right;text-align:right;display:block;}
 
+#related_posts {padding-top:1em;}
+
 #comments{
-  padding-top:2em;
+  padding-top:1em;
 }
 #comments-title {
-  margin:1em 6px;
+  margin:1em 0;
 }
 
 .post, .comment, .pingback {
