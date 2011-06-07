@@ -59,13 +59,6 @@
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
         
-        <?php if (related_posts_exist()) : ?>
-        <div class="ctnr">
-          <h3>Related Posts</h3>
-          <?php related_posts() ?>
-        </div>
-        <?php endif; ?>
-        
 				<?php comments_template( '', true ); ?>
 
 <?php endwhile; // end of the loop. ?>
