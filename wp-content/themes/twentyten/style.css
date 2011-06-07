@@ -115,7 +115,7 @@ blockquote {
   padding-bottom:20px;
 }
 
-.widget_recent_entries li{
+.widget_yarpp_widget li, .widget_recent_entries li{
   margin:0.5em 0;
 }
 
