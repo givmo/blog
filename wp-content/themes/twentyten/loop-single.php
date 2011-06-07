@@ -58,7 +58,18 @@
 						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
-
+        
+        <?php if ($related_query->have_posts()):?>
+        <div class="ctnr">
+          <h3>Related Posts</h3>
+          <ol>
+          	<?php while ($related_query->have_posts()) : $related_query->the_post(); ?>
+          	<li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a><!-- (<?php the_score(); ?>)--></li>
+          	<?php endwhile; ?>
+          </ol>
+        </div>
+        <?php endif; ?>
+        
 				<?php comments_template( '', true ); ?>
 
 <?php endwhile; // end of the loop. ?>
