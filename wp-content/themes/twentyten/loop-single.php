@@ -59,6 +59,13 @@
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
         
+        <?php if (related_posts_exist()) : ?>
+        <div class="widget_yarpp_widget">
+          <h4>Related Posts</h4>
+          <?php related_posts() ?>
+        </div>
+        <?php endif; ?>
+        
 				<?php comments_template( '', true ); ?>
 
 <?php endwhile; // end of the loop. ?>
