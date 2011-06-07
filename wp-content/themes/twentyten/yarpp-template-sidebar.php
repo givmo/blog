@@ -1,4 +1,4 @@
-<h3>Related Posts</h3>
+<h5 class="widget-title">Related Posts</h5>
 <?php if ($related_query->have_posts()):?>
 <ul>
 	<?php while ($related_query->have_posts()) : $related_query->the_post(); ?>
