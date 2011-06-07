@@ -16,6 +16,10 @@
 ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+				<p class="clearfix">
+				  <span id="nav_prev"><?php previous_post('&laquo; %', '') ?> </span>
+				  <span id="nav_next"><?php next_post('% &raquo;', '') ?></span>
+				</p>
 				<div id="post-<?php the_ID(); ?>" <?php post_class('ctnr'); ?>>
 					<h3 class="entry-title"><?php the_title(); ?></h3>
 

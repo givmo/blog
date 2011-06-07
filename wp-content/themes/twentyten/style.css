@@ -75,6 +75,9 @@ blockquote {
   margin-bottom:1em;
 }
 
+#nav_prev{float:left;}
+#nav_next{float:right;text-align:right;display:block;}
+
 #comments{
   padding-top:2em;
 }
