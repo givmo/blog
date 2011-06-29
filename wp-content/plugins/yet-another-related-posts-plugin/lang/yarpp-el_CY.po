@@ -77,8 +77,8 @@ msgstr "Παράδειγμα άρθρου"
 #: options.php:461
 #: options.php:524
 #@ yarpp
-msgid "Related posts brought to you by <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
-msgstr "Τα Σχετικά Άρθρα είναι κατασκεύασμα του <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
+msgid "Related posts brought to you by <a href='%s'>Yet Another Related Posts Plugin</a>."
+msgstr "Τα Σχετικά Άρθρα είναι κατασκεύασμα του <a href='%s'>Yet Another Related Posts Plugin</a>."
 
 #: options.php:10
 #@ yarpp
@@ -346,8 +346,8 @@ msgstr "Όταν είναι επιλεγμένη τότε τα <code>related_pos
 
 #: options.php:391
 #@ yarpp
-msgid "There is a new beta (VERSION) of Yet Another Related Posts Plugin. You can <A>download it here</a> at your own risk."
-msgstr "Έχει ήδη κυκλοφορήσει μια νέα έκδοση beta του Yet Another Related Posts Plugin. Μπορείτε και εσείς να το κατεβάσετε <A>από εδώ</a> με δική σας ευθύνη."
+msgid "There is a new beta (%s) of Yet Another Related Posts Plugin. You can <a href=\"%s\">download it here</a> at your own risk."
+msgstr "Έχει ήδη κυκλοφορήσει μια νέα έκδοση beta του Yet Another Related Posts Plugin. Μπορείτε και εσείς να το κατεβάσετε <a href=\"%s\">από εδώ</a> με δική σας ευθύνη."
 
 #: options.php:393
 #@ yarpp

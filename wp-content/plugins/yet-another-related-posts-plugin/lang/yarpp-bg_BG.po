@@ -90,8 +90,8 @@ msgstr "Примерна публикация"
 #: options.php:462
 #: options.php:530
 #@ yarpp
-msgid "Related posts brought to you by <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
-msgstr "Сродни публикации с помоща на <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
+msgid "Related posts brought to you by <a href='%s'>Yet Another Related Posts Plugin</a>."
+msgstr "Сродни публикации с помоща на <a href='%s'>Yet Another Related Posts Plugin</a>."
 
 #: options.php:10
 #@ yarpp
@@ -347,8 +347,8 @@ msgstr "Показвай само предишни публикации?"
 
 #: options.php:388
 #@ yarpp
-msgid "There is a new beta (VERSION) of Yet Another Related Posts Plugin. You can <A>download it here</a> at your own risk."
-msgstr "Има нова бета (VERSION) на Yet Another Related Posts Plugin. Можете да я <A>свалите тук</a> на ваш собствен риск."
+msgid "There is a new beta (%s) of Yet Another Related Posts Plugin. You can <a href=\"%s\">download it here</a> at your own risk."
+msgstr "Има нова бета (%s) на Yet Another Related Posts Plugin. Можете да я <a href=\"%s\">свалите тук</a> на ваш собствен риск."
 
 #: options.php:390
 #@ yarpp

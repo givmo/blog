@@ -29,7 +29,7 @@ class AddThisSidebarWidget extends WP_Widget {
     function widget($args, $instance)
     {
         extract ( $args );
-        global $addthis_new_styles;
+        $addthis_new_styles = _get_style_options();
        
 
         $title = apply_filters('widget_title', $instance['title']);

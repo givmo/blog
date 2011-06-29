@@ -6,8 +6,8 @@ Plugin URI: http://mitcho.com/code/yarpp/
 Donate link: http://tinyurl.com/donatetomitcho
 Tags: related, posts, post, pages, page, RSS, feed, feeds
 Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 3.2.2
+Tested up to: 3.2
+Stable tag: 3.3.1
 
 Display a list of related entries on your site and feeds based on a unique algorithm. Templating allows customization of the display.
 
@@ -35,6 +35,14 @@ I try to respond to inquiries on the forums on a regular basis and hope to build
 = Testimonials =
 
 "One of my favorite [plugin]s I just activated on my blog is called Yet Another Related Posts Plugin... I've been blogging seven or eight years now so I have a lot of archives, and it actually surprises me sometimes when I blog about something and I visit the permalink to see I've written about it before... and it also increases the traffic on your blog because when they come in just to one entry, they'll see this other stuff going on." - [Matt Mullenweg](http://ma.tt), WordPress creator
+
+"The first one I ended up trying was Yet Another Related Posts Plugin (YARPP), and mitcho has really done a fantastic job on it:
+
+* It’s trivial to install.
+* You don’t have to edit your WordPress template.
+* The relevance is good: the suggested posts are related, and you can tweak thresholds and how things are computed if you want."
+
+-[Matt Cutts](http://www.mattcutts.com/blog/wordpress-plugin-related-posts/), head of Webspam, Google
 
 == Installation ==
 
@@ -156,8 +164,10 @@ YARPP is currently localized in the following languages:
 * Hebrew (`he_IL`) by Mickey Zelansky (yarpp-he at mitcho dot com) of [simpleidea.us](http://simpleidea.us)
 * Hindi (`hi_IN`) by [Outshine Solutions](http://outshinesolutions.com/) (yarpp-hi at mitcho dot com)
 * Italian (`it_IT`) by Gianni Diurno (yarpp-it at mitcho dot com) of [gidibao.net](http://gidibao.net)
+* Irish (`gb_IR`) by [Ray Gren](http://letsbefamous.com) (yarpp-gb at mitcho dot com)
 * Bahasa Indonesia (`id_ID`) by [Hendry Lee](http://hendrylee.com/) (yarpp-id at mitcho dot com) of [Kelayang](http://kelayang.com/)
 * Japanese (`ja`) by myself (yarpp at mitcho dot com)
+* Kazakh (`kk_KZ`) by [DachaDecor](http://DachaDecor.ru) (yarpp-kk at mitcho dot com)
 * Korean (`ko_KR`) by [Jong-In Kim](http://incommunity.codex.kr) (yarpp-ko at mitcho dot com)
 * Latvian (`lv_LV`) by [Mike](http://antsar.info) (yarpp-lv at mitcho dot com)
 * Lithuanian (`lt_LT`) by [Karolis Vyčius](http://vycius.co.cc) and [Mantas Malcius](http://mantas.malcius.lt) (yarpp-lt at mitcho dot com)
@@ -185,6 +195,21 @@ If you are a bilingual speaker of English and another language and an avid user 
 
 == Changelog ==
 
+= 3.3.1 =
+* Quick bugfix to [relatedness options panel bug](http://wordpress.org/support/topic/relatedness-options-for-titles-and-bodies-cant-be-changed)
+= 3.3 =
+* Pretty major rewrite to the options page for extensibility and screen options support
+	* By default, the options screen now only show the display options. "The Pool" and "Relatedness" options can be shown in the screen options tab in the top right corner of the screen.
+	* Removed the "reset options" button, because it wasn't actually doing anything.
+* Rebuilt the new version notice to actually have a link which triggers the WordPress plugin updater, at least for new full versions
+* Changed default "relatedness" settings to not consider categories, to improve performance
+* Added [BlogGlue](http://blogglue.com) partnership module
+* Localizations
+	* Quick fix to Czech word list file name
+	* Updated Italian localization (`it_IT`)
+	* Added Hungarian (`hu_HU`) by [daSSad](http://dassad.com) (yarpp-hu at mitcho dot com)
+	* Added Kazakh (`kk_KZ`) by [DachaDecor](http://DachaDecor.ru) (yarpp-kk at mitcho dot com)
+	* Added Irish (`gb_IR`) by [Ray Gren](http://letsbefamous.com) (yarpp-gb at mitcho dot com)
 = 3.2.2 =
 * Now [ignores soft hyphens](http://wordpress.org/support/topic/plugin-yet-another-related-posts-plugin-french-overused-words) in keyword construction
 * Minor fix for "cross-relate posts and pages" option and more accurate `related_*()` results across post types
@@ -446,5 +471,8 @@ If you are a bilingual speaker of English and another language and an avid user 
 * Initial upload
 
 == Upgrade Notice ==
+= 3.3 =
+Some YARPP options are now hidden by default. You can show them again from the Screen Options tab.
+
 = 3.2.2 =
 Requires PHP 5.

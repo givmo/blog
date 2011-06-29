@@ -41,8 +41,8 @@ msgstr "%f ist die von YARPP ermittelte Übereinstimmung zwischen diesem und dem
 #: options.php:472
 #: options.php:540
 #@ yarpp
-msgid "Related posts brought to you by <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
-msgstr "Ähnliche Artikel bereitgestellt von <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
+msgid "Related posts brought to you by <a href='%s'>Yet Another Related Posts Plugin</a>."
+msgstr "Ähnliche Artikel bereitgestellt von <a href='%s'>Yet Another Related Posts Plugin</a>."
 
 #: options.php:37
 #@ yarpp
@@ -484,8 +484,8 @@ msgstr "Zeige nur in der Vergangenheit liegende Artikel"
 
 #: options.php:394
 #@ yarpp
-msgid "There is a new beta (VERSION) of Yet Another Related Posts Plugin. You can <A>download it here</a> at your own risk."
-msgstr "Es steht eine neue Beta (VERSION) von Yet Another Related Posts Plugin zur Verfügung. Sie können sie <A>hier heruntergeladen</a> Dies geschieht auf eigene Gefahr."
+msgid "There is a new beta (%s) of Yet Another Related Posts Plugin. You can <a href=\"%s\">download it here</a> at your own risk."
+msgstr "Es steht eine neue Beta (%s) von Yet Another Related Posts Plugin zur Verfügung. Sie können sie <a href=\"%s\">hier heruntergeladen</a> Dies geschieht auf eigene Gefahr."
 
 #: options.php:399
 #@ yarpp

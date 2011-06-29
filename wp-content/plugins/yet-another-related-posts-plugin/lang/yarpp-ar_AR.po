@@ -51,8 +51,8 @@ msgstr "%f - وكانت النتيجة مطابقة YARPP بين دخول الح
 #: options.php:462
 #: options.php:530
 #@ yarpp
-msgid "Related posts brought to you by <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
-msgstr "الوظائف ذات الصلة يقدمها لكم من جانب آخر على href='http://mitcho.com/code/yarpp/'> <aالمشاركات ذات البرنامج المساعد</a>."
+msgid "Related posts brought to you by <a href='%s'>Yet Another Related Posts Plugin</a>."
+msgstr "الوظائف ذات الصلة يقدمها لكم من جانب آخر على href='%s'> <aالمشاركات ذات البرنامج المساعد</a>."
 
 #: options.php:26
 #@ yarpp
@@ -483,7 +483,7 @@ msgstr "عرض وظيفة فقط من الماضي  NUMBER UNITS"
 
 #: options.php:388
 #@ yarpp
-msgid "There is a new beta (VERSION) of Yet Another Related Posts Plugin. You can <A>download it here</a> at your own risk."
+msgid "There is a new beta (%s) of Yet Another Related Posts Plugin. You can <a href=\"%s\">download it here</a> at your own risk."
 msgstr "الإصدار التجريبي الجديد (نسخة) سد YARPP. يمكنك تحميله من هنا <a></ أ> على مسؤوليتك الخاصة."
 
 #: options.php:390

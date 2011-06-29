@@ -90,8 +90,8 @@ msgstr "مثال مشاركة"
 #: options.php:459
 #: options.php:527
 #@ yarpp
-msgid "Related posts brought to you by <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>."
-msgstr "إضافة المحتويات ذات الصلة مقدم لكم بواسطة <a href='http://mitcho.com/code/yarpp/'>Yet Another Related Posts Plugin</a>. <br /> قام بالترجة للغة العربية <a href='http://www.cdmazika.com'>CDMazika.com</a>"
+msgid "Related posts brought to you by <a href='%s'>Yet Another Related Posts Plugin</a>."
+msgstr "إضافة المحتويات ذات الصلة مقدم لكم بواسطة <a href='%s'>Yet Another Related Posts Plugin</a>. <br /> قام بالترجة للغة العربية <a href='http://www.cdmazika.com'>CDMazika.com</a>"
 
 #: options.php:10
 #@ yarpp
@@ -342,8 +342,8 @@ msgstr "عندما  \"توصل بين المشاركات و الصفحات\", س
 
 #: options.php:385
 #@ yarpp
-msgid "There is a new beta (VERSION) of Yet Another Related Posts Plugin. You can <A>download it here</a> at your own risk."
-msgstr "تم إصدار نسخة تجريبية جديدة من إضافة المحتويات المتشابهه (YARPP). يمكنك <A>تحميلها من هنا</a> على مسؤوليتك الخاصة."
+msgid "There is a new beta (%s) of Yet Another Related Posts Plugin. You can <a href=\"%s\">download it here</a> at your own risk."
+msgstr "تم إصدار نسخة تجريبية جديدة من إضافة المحتويات المتشابهه (%s). يمكنك <a href=\"%s\">تحميلها من هنا</a> على مسؤوليتك الخاصة."
 
 #: options.php:387
 #@ yarpp
