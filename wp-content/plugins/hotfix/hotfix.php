@@ -2,7 +2,7 @@
 /*
 Plugin Name: Hotfix
 Description: Provides "hotfixes" for selected WordPress bugs, so you don't have to wait for the next WordPress core release. Keep the plugin updated!
-Version: 0.5
+Version: 0.7
 Author: Mark Jaquith
 Author URI: http://coveredwebservices.com/
 */
@@ -78,3 +78,37 @@ function wp_hotfix_313_post_status_query_string() {
 			$qvs['post_status'] = implode( ',', $qvs['post_status'] );
 		return $qvs;
 	}
+
+if ( ! function_exists( 'json_encode' ) ) {
+	function json_encode( $string ) {
+		global $wp_hotfix_json;
+
+		if ( ! is_a( $wp_hotfix_json, 'Services_JSON' ) ) {
+			require_once( dirname( __FILE__ ) . '/inc/class-json.php' );
+			$wp_hotfix_json = new Services_JSON();
+		}
+
+		return $wp_hotfix_json->encodeUnsafe( $string );
+	}
+}
+
+if ( ! function_exists( 'json_decode' ) && ! function_exists( '_json_decode_object_helper' ) ) {
+	function json_decode( $string, $assoc_array = false ) {
+		global $wp_hotfix_json;
+
+		if ( ! is_a( $wp_hotfix_json, 'Services_JSON' ) ) {
+			require_once( dirname( __FILE__ ) . '/inc/class-json.php' );
+			$wp_hotfix_json = new Services_JSON();
+		}
+
+		$res = $wp_hotfix_json->decode( $string );
+		if ( $assoc_array )
+			$res = _json_decode_object_helper( $res );
+		return $res;
+	}
+	function _json_decode_object_helper($data) {
+		if ( is_object($data) )
+			$data = get_object_vars($data);
+		return is_array($data) ? array_map(__FUNCTION__, $data) : $data;
+	}
+}
