@@ -41,10 +41,8 @@ jQuery(document).ready(function($) {
             action: 'at_save_transient',
             value : stuff
         };
-        
 
         jQuery.post(ajaxurl, data, function(response) {
-
             // Fix for WP 2.9's version of lightbox 
             if ( typeof tb_click != 'undefined' &&  $.isFunction(tb_click.call))
             {
@@ -77,24 +75,24 @@ jQuery(document).ready(function($) {
     });
 
     $('#above_more').click( function() {
-        $('#above .hidden').removeClass('hidden');
+        $('#above .select_row').removeClass('hidden');
         $(this).hide();
         return false;
     });
     $('#below_more').click( function() {
-        $('#below .hidden').removeClass('hidden');
+        $('#below .select_row').removeClass('hidden');
         $(this).hide();
         return false;
     });
    
     var show_above =  $('input[name="addthis_settings[show_above]"]');
     var show_below = $('input[name="addthis_settings[show_below]"]');
-    if ( show_above.attr('checked') != "undefined" && show_above.attr('checked') == true)
+    if ( show_above.prop('checked') != "undefined" && show_above.prop('checked') == true)
     {
         $('.above_option').toggleClass('hide');
     }
    
-    if ( show_below.attr('checked') != "undefined" && show_below.attr('checked') == true)
+    if ( show_below.prop('checked') != "undefined" && show_below.prop('checked') == true)
     {
         $('.below_option').toggleClass('hide');
     }
@@ -110,7 +108,7 @@ jQuery(document).ready(function($) {
 
     var aboveCustom = $('#above_custom_button'); 
     var aboveCustomShow = function(){
-        if ( aboveCustom.attr('checked') != 'undefined' &&  aboveCustom.attr('checked') == true)
+        if ( aboveCustom.prop('checked') != 'undefined' &&  aboveCustom.prop('checked') == true)
         {
             $('.above_option_custom').removeClass('hidden');
         }
@@ -121,7 +119,7 @@ jQuery(document).ready(function($) {
     };
     var belowCustom = $('#below_custom_button'); 
     var belowCustomShow = function(){
-        if ( belowCustom.attr('checked') != 'undefined' &&  belowCustom.attr('checked') == true)
+        if ( belowCustom.prop('checked') != 'undefined' &&  belowCustom.prop('checked') == true)
         {
             $('.below_option_custom').removeClass('hidden');
         }
@@ -133,7 +131,7 @@ jQuery(document).ready(function($) {
 
     var aboveCustomString = $('#above_custom_string'); 
     var aboveCustomStringShow = function(){
-        if ( aboveCustomString.attr('checked') != 'undefined' &&  aboveCustomString.attr('checked') == true)
+        if ( aboveCustomString.prop('checked') != 'undefined' &&  aboveCustomString.prop('checked') == true)
         {
             $('#above_custom_string_input').removeClass('hidden');
         }
@@ -144,7 +142,7 @@ jQuery(document).ready(function($) {
     };
     var belowCustomString = $('#below_custom_string'); 
     var belowCustomStringShow = function(){
-        if ( belowCustomString.attr('checked') != 'undefined' &&  belowCustomString.attr('checked') == true)
+        if ( belowCustomString.prop('checked') != 'undefined' &&  belowCustomString.prop('checked') == true)
         {
             $('#below_custom_string_input').removeClass('hidden');
         }
@@ -161,4 +159,6 @@ jQuery(document).ready(function($) {
 
     $('input[name="addthis_settings[above]"]').change( function(){aboveCustomShow(); aboveCustomStringShow();} );
     $('input[name="addthis_settings[below]"]').change( function(){belowCustomShow(); belowCustomStringShow();} );
+
+
 });

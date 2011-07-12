@@ -45,7 +45,7 @@ function addthis_kses($string)
     }
     foreach($posttags as $attr)
     {
-        $post_pattern[] = '/'.$attr.'/';
+        $post_pattern[] = '/[^_]'.$attr.'/';
     }
     $temp_string = preg_replace( $pre_pattern, $posttags, $string);
     $new_temp_string = wp_kses($temp_string, $mytags);
@@ -63,6 +63,8 @@ function addthis_kses($string)
  function _addthis_choose_icons($name, $options)
  {
      $addthis_new_styles = _get_style_options();
+     global $addthis_default_options;
+
      extract($options);
      if ($name == 'above')
      {
@@ -135,6 +137,7 @@ function addthis_kses($string)
                 echo "</ul></div>";
                
                     $class = 'hidden';
+                    $checked = '';
                     if ($option == 'custom_string' || $option == 'none' && 'custom_strin' == $addthis_default_options[$name] )
                     {
                         $checked = 'checked="checked"';
@@ -142,9 +145,8 @@ function addthis_kses($string)
                     }
 
                     echo "<div class='$name"."_option select_row $class '> <input $checked type='radio' value='custom_string' name='addthis_settings[$name]' id='$name"."_custom_string' />Custom Button</input>";
-                   
                     echo "<br />";
-                    echo "<textarea rows='5' cols='120' name='addthis_settings[$name"."_custom_string]' value=' $custom_string' id='$name"."_custom_string_input' />".($custom_string)."</textarea>";
+                    echo "<textarea rows='5' cols='120' name='addthis_settings[$name"."_custom_string]' id='$name"."_custom_string_input' />".esc_textarea($custom_string)."</textarea>";
 
                     echo '</div>';
                 ?>
